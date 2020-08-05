@@ -21,3 +21,12 @@ Route::get('/', 'HomeController@index');
 Route::get('/register', 'AuthController@index');
 
 Route::post('/selamatdtg', 'AuthController@welcome');
+
+Route::get('/master', function() {
+	return view('adminlte.master');
+});
+
+Route::get('/data-tables', function(){
+	
+	return view('data-tables');
+});
